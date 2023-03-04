@@ -1,0 +1,28 @@
+.container {
+  display: grid;
+  grid-template-areas: 
+    "left header"
+    "left form"
+    "left footer";
+  grid-template-columns: 2fr 3fr;
+  grid-template-rows: auto;
+}
+
+.copy {
+  grid-area: header;
+}
+
+.form {
+  grid-area: form;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.form > p {
+  width: 100%;
+}
+
+.form-block > p {
+  grid-area: footer;
+}

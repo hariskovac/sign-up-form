@@ -38,6 +38,7 @@ p, h1, h2, h3, h4, h5, h6 {
   height: 100vh;
   background: url("media/bg-960x1200.jpg");
   background-size: cover;
+  position: relative;
 }
 
 .form-block > * {
@@ -68,6 +69,18 @@ p, h1, h2, h3, h4, h5, h6 {
   color:white;
   text-shadow: 0 0 1px black; 
   padding: 0 10px;
+}
+
+.attribution {
+  text-align: center;
+  color: white;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.link {
+  color: inherit;
 }
 
 .copy {

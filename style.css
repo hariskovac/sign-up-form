@@ -59,7 +59,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .image-block > div {
-  background-color: rgba(88, 106, 185, 0.25);
+  background-color: rgba(0, 26, 141, 0.4);
   border-top: 1px solid rgba(255, 250, 250, 0.3);
   border-bottom: 1px solid rgba(255, 250, 250, 0.3);
   margin-top: 25%;

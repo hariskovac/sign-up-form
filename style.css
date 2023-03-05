@@ -15,11 +15,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-img, picture, video, canvas, svg {
-  display: block;
-  max-width: 100%;
-}
-
 input, button, textarea, select {
   font: inherit;
 }
@@ -55,4 +50,34 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .form-block > p {
   grid-area: footer;
+}
+
+.image-block {
+  height: 100vh;
+  background: url("media/bg-960x1200.jpg");
+  background-size: cover;
+}
+
+.image-block > div {
+  background-color: rgba(88, 106, 185, 0.25);
+  margin-top: 25%;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  display: inline-block;
+  min-width: 7rem;
+  max-width: 10rem;
+}
+
+.main-heading {
+  display: inline-block;
+  font-family: 'Cinzel Decorative', Arial, sans-serif;
+  font-size: 4.5rem;
+  color:white;
+  text-shadow: 0 0 1px black; 
+  padding: 0 10px;
 }

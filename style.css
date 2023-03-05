@@ -25,24 +25,26 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .container {
+  height: 100vh;
   display: grid;
   grid-template-areas: 
     "left header"
     "left form"
     "left footer";
   grid-template-columns: 2fr 3fr;
-  grid-template-rows: auto;
+  grid-template-rows: min-content;
 }
 
 .image-block {
   height: 100vh;
-  background: url("media/bg-960x1200.jpg");
-  background-size: cover;
+  background-image: url("media/bg-960x1200.jpg");
+  background-size: auto;
+  background-position: center;
   position: relative;
 }
 
 .form-block > * {
-  padding: 0 20px;
+  padding: 0 5%;
 }
 
 .image-block > div {
@@ -92,7 +94,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .copy > p {
   position: absolute;
   bottom: 5%;
-  margin-right: 15%;
+  padding-right: 15%;
   font-size: 1.8rem;
 }
 
@@ -100,16 +102,34 @@ p, h1, h2, h3, h4, h5, h6 {
   grid-area: form;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  height: 40%;
+  gap: 15px 10%;
+  padding-right: 15%;
   background-color: lightblue;
+}
+
+.form__input {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-width: 150px;
+  width: 45%;
+}
+
+.form__input:last-child {
+  padding-bottom: 25px;
+}
+
+.button-container {
+  width: 100%;
+  margin: 15px 0;
 }
 
 .form > p {
   width: 100%;
+  font-size: 1.8rem;
+  margin-top: 25px;
 }
 
 .form-block > p {
   grid-area: footer;
 }
-

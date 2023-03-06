@@ -121,6 +121,11 @@ input {
   border: 1px solid rgba(0, 0, 0, 0.4);
 }
 
+input:focus {
+  border: 1px solid lightblue;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
 .button-container {
   width: 100%;
   margin: 25px 0;
@@ -136,6 +141,7 @@ button {
   cursor: pointer;
   color: white;
   background-color: dodgerblue;
+  font-weight: bold;
   width: 250px;
   height: 60px;
   border-radius: 5px;

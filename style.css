@@ -25,12 +25,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .container {
-  height: 100vh;
   display: grid;
-  grid-template-areas: 
-    "left header"
-    "left form"
-    "left footer";
   grid-template-columns: 2fr 3fr;
   grid-template-rows: min-content;
 }
@@ -43,8 +38,14 @@ p, h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
+.form-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .form-block > * {
-  padding: 0 5%;
+  padding: 0 30px;
 }
 
 .image-block > div {
@@ -85,21 +86,13 @@ p, h1, h2, h3, h4, h5, h6 {
   color: inherit;
 }
 
-.copy {
-  position: relative;
-  grid-area: header;
-  height: 30%;
-}
-
 .copy > p {
-  position: absolute;
-  bottom: 5%;
-  padding-right: 15%;
-  font-size: 1.8rem;
+  padding-bottom: 3%;
+  padding-right: 10%;
+  font-size: clamp(0.5rem, 2.5vw, 1.8rem);
 }
 
 .form {
-  grid-area: form;
   display: flex;
   flex-wrap: wrap;
   gap: 15px 10%;
@@ -128,8 +121,4 @@ p, h1, h2, h3, h4, h5, h6 {
   width: 100%;
   font-size: 1.8rem;
   margin-top: 25px;
-}
-
-.form-block > p {
-  grid-area: footer;
 }

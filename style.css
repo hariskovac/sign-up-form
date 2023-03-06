@@ -42,6 +42,7 @@ p, h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .form-block > * {
@@ -87,8 +88,8 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .copy > p {
-  padding-bottom: 3%;
-  padding-right: 10%;
+  padding-bottom: 25px;
+  padding-right: 15%;
   font-size: clamp(0.5rem, 2.5vw, 1.8rem);
 }
 
@@ -109,7 +110,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .form__input:last-child {
-  padding-bottom: 25px;
+  padding-bottom: 30px;
 }
 
 .button-container {

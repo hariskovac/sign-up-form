@@ -126,6 +126,11 @@ input:focus {
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
 }
 
+.text-red {
+  color: red;
+  font-size: 1.3rem;
+}
+
 .button-container {
   width: 100%;
   margin-top: 40px;

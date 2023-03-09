@@ -126,6 +126,11 @@ input:focus {
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
 }
 
+.error {
+  font-size: 0.8rem;
+  color: red;
+}
+
 .text-red {
   color: red;
   font-size: 1.3rem;
